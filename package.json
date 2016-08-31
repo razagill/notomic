@@ -2,9 +2,11 @@
   "name": "notomic",
   "version": "0.0.1",
   "description": "A very lightweight notification library",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "TARGET=dev webpack-dev-server --progress",
+    "build": "TARGET=build webpack -p --progress"
   },
   "repository": {
     "type": "git",

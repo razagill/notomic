@@ -1,0 +1,43 @@
+.notomic {
+  display: inline-block;
+  position: fixed;
+  color: #f1f1f1;
+  top: 0.8rem;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  min-width: 290px;
+  width: 80%;
+  margin: auto;
+  z-index: 400;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 0.2rem;
+  font-size: 90%;
+  transition: visibility 0.3s, transform 0.3s;
+  transform: translateY(-100px);
+  visibility: hidden;
+  will-change: transform;
+}
+
+.notomic-visible {
+  visibility: visible;
+  transform: none;
+}
+
+.notomic-error {
+  background-color: #e74c3c;
+}
+
+.notomic-success {
+  background-color: #64ce83;
+}
+
+.notomic-warning {
+  background-color: #ff7f48;
+}
+
+.notomic-info {
+  background-color: #3ea2ff;
+}
